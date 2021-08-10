@@ -1,4 +1,4 @@
-\ProvidesClass{cv}
+\ProvidesClass{denniscv}[2021/08/10 Dennis Chen's multi-page CV class]
 \LoadClass{article}
 
 \RequirePackage[letterpaper,top=1.5cm,bottom=1.5cm,left=2cm,right=2cm]{geometry} % adjust marhins
