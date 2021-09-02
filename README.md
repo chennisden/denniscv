@@ -8,4 +8,4 @@ The terms for using this class are defined in the license. Therefore, you are le
     
 - Please star the repository if you found it helpful :)
 
-My old personal website has an [example file](https://www.geometryexplorer.xyz/texfiles/CV/cv.tex).
+My personal website [dennisc.net](https://www.dennisc.net) has an [example file](https://www.dennisc.net/cv.tex) and [PDF](https://www.dennisc.net/cv.pdf).
