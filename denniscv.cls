@@ -24,8 +24,6 @@
 }
 
 % fonts
-\RequirePackage{Alegreya} % used for certain things
-\renewcommand\rmdefault{lmr} % set default font to computer modern
 \RequirePackage{graphicx} % for the next thing
 \newsavebox\CBox % lighter bold
 \def\lightBold#1{\sbox\CBox{#1}\resizebox{\wd\CBox}{\ht\CBox}{\textbf{#1}}}
@@ -58,14 +56,13 @@
 \newcommand{\sep}{\hspace{5pt}$\circ$\hspace{5pt}}
 
 \newcommand{\cvQuote}[2]{
-\begin{adjustwidth}{6cm}{6cm}
-{\color{wildcolor}\Alegreya{#1}
-
-\begin{flushright}
-\textsl{#2}
-\end{flushright}
-}
-\end{adjustwidth}
+    \begin{adjustwidth}{6cm}{6cm}
+        {\fontfamily{Alegreya-LF}\selectfont\color{wildcolor}#1
+            \begin{flushright}
+            \textsl{#2}
+            \end{flushright}
+        }
+    \end{adjustwidth}
 } % quote for CV
 
 %body commands
@@ -79,7 +76,7 @@
 
 \newcommand{\act}[3]{
 \vspace{6pt}
-	\noindent{{\fontsize{11}{13.2}\selectfont\color{bodycolor}\Alegreya\lightBold{{\sffamily#1}}\hfill#2 \if\relax\detokenize{#3}\relax\else\hspace{0mm}-- #3\fi}}
+	\noindent{{\fontsize{11}{13.2}\fontfamily{Alegreya-LF}\selectfont\color{bodycolor}\lightBold{{\sffamily#1}}\hfill#2 \if\relax\detokenize{#3}\relax\else\hspace{0mm}-- #3\fi}}
 \vspace{2pt}
 } %each thing i did. \act{thing}{start date}{end date}
 
